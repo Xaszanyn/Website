@@ -75,7 +75,7 @@ nav #navigation a:not(:last-of-type)
 }
 
 nav #navigation a {
-    font-size: 25rem;
+    font-size: 20rem;
     color: var(--red);
     font-weight: 600;
 
@@ -83,14 +83,25 @@ nav #navigation a {
 }
 
 nav #navigation a:hover {
-    font-size: 30rem;
+    font-size: 25rem;
     color: var(--link-red);
 }
 
-/* (SECTION) -------------------------------------------------- */
+/* (MAIN) -------------------------------------------------- */
 
 main {
-    border-radius: 75rem;
+    border-radius: 75rem 0;
     padding: 50rem;
     background-color: var(--white);
+}
+
+main section:not(:last-of-type) {
+    margin-bottom: 125rem;
+}
+
+main section h2 {
+    font-size: 40rem;
+    font-weight: 300;
+    color: var(--red);
+    line-height: 100rem;
 }
