@@ -1,6 +1,6 @@
 /* (IMPORTS) -------------------------------------------------- */
 
-@import url("/resources/css/elementary.css");
+@import url("/resources/assets/css/elementary.css");
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap');
 
 /* (GENERAL) -------------------------------------------------- */
@@ -71,17 +71,17 @@ nav #navigation {
     margin-left: auto;
 }
 
-nav #navigation a:not(:last-of-type)
-{
-    margin-right: 25rem;
-}
-
 nav #navigation a {
     font-size: 20rem;
     color: var(--red);
     font-weight: 600;
 
     transition: font-size var(--action-fast), color var(--action-fast);
+}
+
+nav #navigation a:not(:last-of-type)
+{
+    margin-right: 25rem;
 }
 
 nav #navigation a:hover {
@@ -111,12 +111,12 @@ main section h2 {
     color: var(--red);
 }
 
-main section .content:not(:last-of-type) {
-    margin-bottom: 75rem;
-}
-
 main section .content {
     padding-left: 25rem;
+}
+
+main section .content:not(:last-of-type) {
+    margin-bottom: 75rem;
 }
 
 main section .content h3 {
@@ -131,4 +131,63 @@ main section .content p {
     margin-bottom: 10rem;
 
     text-align: justify;
+}
+
+main section .content > img, main section .content > video {
+    display: block;
+    margin: 25rem auto;
+    max-width: 50%;
+    max-height: 400rem;
+    border-radius: 25rem;
+
+    border: 5rem solid;
+}
+
+main section .content > img {
+    border-color: var(--red);
+}
+
+main section .content > video {
+    border-color: var(--blue);
+}
+
+main section .content .downloadable {
+    margin-top: 10rem;
+}
+
+main section .content .downloadable img {
+    width: 48rem;
+    height: auto;
+    margin-right: 25rem;
+    border-radius: 12rem;
+}
+
+main section .content .downloadable a {
+    border: 5px solid var(--night);
+    border-radius: 25rem;
+    padding: 0 10rem;
+
+    font-weight: 600;
+
+    color: var(--night);
+
+    transition: border-color var(--action-fast), background-color var(--action-fast), color var(--action-fast);
+}
+
+main section .content .downloadable a:not(:first-of-type) {
+    margin-left: 25rem;
+}
+
+main section .content .downloadable a:hover {
+    border-color: var(--green);
+    background-color: var(--green);
+    color: var(--white);
+}
+
+main section .content .time {
+    display: block;
+    text-align: right;
+
+    color: var(--metal);
+    font-style: italic;
 }

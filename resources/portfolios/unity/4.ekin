@@ -1,0 +1,21 @@
+<h3>Escape From Darkness (Game Jam)</h3>
+
+<span class="time">23 May 2021</span>
+
+<p>It's a Run and Jump style game that I made the all musics and visuals by myself in 3 days in the Hackaton Isparta Game Jam.</p>
+
+<p>During this 3-day period, I understood the importance of time planning in game developing, learned using different layers, and realized that different level designs can be created with the flexibility of this color mechanic.</p>
+
+<video controls>
+    <source src="/resources/videos/unity/Escape From Darkness.mp4" type="video/mp4">
+</video>
+
+<p>Player tries to escape from the darkness on different platforms by using the colors red, green and blue for can pass through platforms of the same color as itself.</p>
+
+<img src="/resources/images/unity/Escape From Darkness.png" alt="Gameplay">
+
+<div class="downloadable holder">
+    <img src="/resources/images/unity/Escape From Darkness Icon.png" alt="Icon">
+    <a href="/resources/downloadables/apk/Escape From Darkness.apk" download>Escape From Darkness (Android)</a>
+    <a href="/resources/downloadables/zip/Escape From Darkness.zip"download>Escape From Darkness (Windows)</a>
+</div>

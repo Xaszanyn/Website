@@ -1,7 +1,7 @@
 var navigation = document.querySelector("#navigation");
 var main = document.querySelector("main");
 
-reach("/resources/portfolio/index.ekin", append);
+reach("/resources/portfolios/index.ekin", append);
 
 function append(index)
 {
@@ -38,9 +38,9 @@ function append(index)
 
         section.appendChild(title);
 
-        for(j = 1; j <= contentAmount; j++) // If I write 'i' instead of 'j'; code crashes!
+        for(j = contentAmount; j >= 1; j--) // If I write 'i' instead of 'j'; code crashes!
         {
-            reach(`/resources/portfolio/${tag}/${j}.ekin`, createContent);
+            reach(`/resources/portfolios/${tag}/${j}.ekin`, createContent);
         }
 
         main.appendChild(section);

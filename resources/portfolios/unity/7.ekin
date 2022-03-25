@@ -1,0 +1,18 @@
+<h3>Fly Around (Game Jam)</h3>
+
+<span class="time">28 August 2021</span>
+
+<p>Complete 3D Runner game that I made the all music and visuals by myself in 2 weeks in the Next In Game Jam.</p>
+
+<video controls>
+    <source src="/resources/videos/unity/Fly Around.mp4" type="video/mp4">
+</video>
+
+<p>The mechanic was ok but designing the power-ups and levels were hard for me.</p>
+
+<img src="/resources/images/unity/Fly Around.gif" alt="Gameplay">
+
+<div class="downloadable holder">
+    <img src="/resources/images/unity/Fly Around Icon.png" alt="Icon">
+    <a href="/resources/downloadables/apk/Fly Around.apk">Fly Around (Android)</a>
+</div>

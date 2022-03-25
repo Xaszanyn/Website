@@ -1,0 +1,66 @@
+/* (VARIABLES) -------------------------------------------------- */
+
+:root {
+    --white: #F7F7F7;
+    --black: #070707;
+    --text-black: #070707DF;
+    --red: #BF0707;
+    --link-red: #DF0707;
+    --turquoise: #077FDF;
+    --blue: #071FDF;
+    --night: #07075F;
+    --metal: #1F2F3F;
+    --green: #07DF07;
+
+    --action-fast: .3s;
+    --action: .5s;
+}
+
+/* (GENERAL) -------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+/* (LAYER) -------------------------------------------------- */
+
+.layer {
+    position: relative;
+}
+
+.layer :first-of-type {
+    z-index: 101;
+    transition: opacity var(--action-fast);
+}
+
+.layer :last-of-type {
+    z-index: 100;
+}
+
+.layer:hover :first-of-type {
+    opacity: 0;
+}
+
+/* (FLEX) -------------------------------------------------- */
+
+.holder {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
