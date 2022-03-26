@@ -191,3 +191,10 @@ main section .content .time {
     color: var(--metal);
     font-style: italic;
 }
+
+main section .content .slider {
+    margin: 25rem 0;
+    height: 300rem;
+    background-color: cadetblue;
+}
+

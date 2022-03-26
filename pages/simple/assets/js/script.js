@@ -1,8 +1,6 @@
 var navigation = document.querySelector("#navigation");
 var main = document.querySelector("main");
 
-reach("/resources/portfolios/index.ekin", append);
-
 function append(index)
 {
     index = index.split("\n");
@@ -52,6 +50,12 @@ function append(index)
             content.innerHTML = data;
 
             section.appendChild(content);
+
+            content.querySelectorAll(".slider").forEach(slide);
         }
     }
 }
+
+/* (MAIN) -------------------------------------------------- */
+
+reach("/resources/portfolios/index.ekin", append);
