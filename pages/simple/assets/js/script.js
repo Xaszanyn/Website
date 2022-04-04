@@ -51,7 +51,7 @@ function append(index)
 
             section.appendChild(content);
 
-            content.querySelectorAll(".slider").forEach(slide);
+            //content.querySelectorAll(".slider").forEach(slide); SLİDE İÇİN BURAYA DÖN
         }
     }
 }

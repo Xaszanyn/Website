@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ekin Aslan</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Play', sans-serif;
+            color: #161916;
+        }
+        
+        
+        body {
+            background-image: linear-gradient(-160deg, #0093E9 0%, #80D0C7 100%);
+            background-attachment: fixed;
+
+        }
+        
+        h1 {
+            text-align: center;
+            margin: 50px;
+        }
+        
+        section {
+            background-image: linear-gradient(90deg, #ebfaf1 0%, #deebe5 100%);
+            margin: 50px;
+            border-radius: 25px;
+            padding: 50px;
+        }
+        h2, h3 {
+            margin-bottom: 25px;
+        }
+        
+        ul {
+            margin-bottom: 25px;
+        }
+        
+        li {
+            margin-left: 25px;
+            margin-bottom: 10px;   
+        }
+        
+        p, li {
+            font-size: 20px;
+        }
+        
+        p {
+            margin-bottom: 25px;
+        }
+        
+        a {
+            display: inline-block;
+            margin: 2.5px;
+            color: #db2f2f;
+            font-size: 22px;
+            transition: all .5s;
+            padding: 5px 10px;
+            border-radius: 10px;
+        } a:hover {
+            color: #fff;
+            background-color: #db2f2f;
+        }
+        
+        center img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #161916;
+        }
+        
+        .media {
+            border: 3px solid #161916;
+            display: block;
+            margin-bottom: 25px;
+            width: 50%;
+            height: auto;
+            border-radius: 2.5px;
+        }
+        
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .flex>div {
+            width: 440px;
+            background-color: #6e82af;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+            transition: all .5s;
+        }
+        .flex>div:hover {
+            box-shadow: 0 0 9px rgba(0, 0, 0, 1);
+        }
+        .flex p {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .flex a {
+            color: #1d1da8;
+        } .flex a:hover { color: #fff; }
+        
+        video {
+            max-height: 300px;
+            width: 400px;
+            box-shadow: 0 0 3px #2f2fdb;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>Ekin Aslan</h1>
+    
+    <center>
+        <img style="box-shadow: 0 0 30px #fff" src="resources/img/profile.jpg" alt="Profile">
+        <p><b>ekinaslan.js@gmail.com</b></p>
+    </center>
+    
+    
+    <section style="border: 6px solid #FF0000;">
+        <p style="font-size 20px;">
+            <b style="color: #FF0000;">This is an outdated page, most of the resources might be missing. But you can visit external links.</b>
+        </p>
+        <!-- <a target="_blank" href="map">Map</a> -->
+    </section>
+    
+    <section style="border: 6px solid #2fdb2f">
+        
+        <h2>Hackathon Isparta Yarışması (Escape From Darkness)</h2>
+       <p>(21 Mayıs 2021) Hackaton Isparta Yarışması'nda 3 gün içerisinde müziklerini, görsellerini de kendim yaptığım Run and Jump tarzı programladığım oyundur.</p>
+        <p>Oyuncu kırmızı, yeşil ve mavi renklerini kullanarak farklı platformlar üzerinden karanlıktan kaçmaya çalışır. Oyuncu kaçış esnasında aynı renk olduğu platformların içinden geçebilir.</p>
+        
+        <p>3 günlük süre boyunca oyun programlada zaman planlamanın önemini kavradım. Geliştirdiğim renk mekaniği ile farklı layer kullanımını incelemiş oldum, renk mekaniğinin esnekliği ise farklı level tasarımlarının oluşturulabildiğini fark ettim.</p>
+        
+        <video controls style="display: block; width: 550px; height: auto; max-height: none;">
+              <source src="resources/vid/Gameplay.mp4" type="video/mp4">
+              Bir Hata Oluştu
+        </video>
+        
+        <img style="margin-right: 10px; border-radius: 25%; width: 64px; height: 64px; transform: translateY(24px);" src="resources/img/Icon.png" alt="">
+        <a target="_blank" href="resources/escapefromdarkness.apk">Escape From Darkness (Android)</a><a target="_blank" href="resources/Escape%20From%20Darkness.zip">Escape From Darkness (Windows)</a><br><br><br>
+        
+       <h2>Unity Projesi (Birb)</h2>
+       <p>1 Hafta içerisinde Unity kursu öğrenerek basit bir replika oyun programladım. Sprite çizimleri bana aittir. Oyunun arayüzünü ve oynanışını basit tutarak hypercasual oyun tarzını korumayı hedefledim.</p>
+        <p>Oyuncu iki duvar arasında sürekli zıplayarak engellerden kaçan ve görevi altın toplamak olan bir kuşu kontrol ederek yanmamaya çalışır.</p>
+        
+        <img class="media" src="resources/img/gameplay.png" alt="">
+        
+        <img style="margin-right: 10px" src="resources/img/Birb.png" alt="">
+        <a target="_blank" href="resources/birdgame.apk">Bird Game (Android)</a><br><br><br>
+        
+        <h2>Unity UI (Guesser)</h2>
+        <p>Unity UI sistemini anlamak için yaptığım ufak bir sayı tahmin oyunu.</p>
+        <img class="media" src="resources/img/UI.png" alt="">
+        <a target="_blank" href="resources/guesserUI.apk">Guesser (Android)</a><a target="_blank" href="resources/guesserUI.zip">Guesser (Windows)</a>
+    </section>
+    
+    <section>
+      <h2>Çalışmalarım</h2>
+      <h3>>>>>- Oyun Müziği Çalışmalarım</h3>
+      <ul>
+          <li><a target="_blank" href="https://onlinesequencer.net/1691280">Life's Interval (06.05.2021)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1790364">Salty Dessert (25.04.2021)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1969002">Levant (10.04.2021)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1932046">Defusing Bomb v2 (27.03.2021)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1931802">Defusing Bomb (20.03.2021)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1876572">Too Much Cute to Live v2 (26.02.2021)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1873803">Too Much Cute to Live (25.02.2021)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1847212">Terror (09.02.2021)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1794441">Idle Wind (12.01.2021)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1717928">Unfinished (21.11.2020)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1695889">Loop (08.11.2020)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1694855">Ekin's Theme (07.11.2020)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1205534">Prelude (18.08.2020)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1195930">Turkuaz (04.08.2020)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1173217">Vnymea (04.07.2020)</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1165739">Masterpiece (24.06.2019)</a></li>
+      </ul><br>
+      <p>Efektler ve Deneyler</p>
+      <ul>
+          <li><a target="_blank" href="https://onlinesequencer.net/2031372">8-bit Effect</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/2037930">8-bit Song</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1919390">Yarım</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1934497">Percussion Test</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1918086">What's Missing</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1725684">Effect</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1704584">Alien</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1657482">Enteresan Etki</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1179878">Test</a></li>
+          <li><a target="_blank" href="https://onlinesequencer.net/1106188">Trying</a></li>
+      </ul><br>
+      
+      <a target="_blank" style="font-size: 100%" href="resources/samples.zip"><h3 style="margin-bottom: 0; color: #2f2fdb">>>>>- Musescore Logo Çalışmalarım</h3></a><br><br>
+      <a target="_blank" style="font-size: 100%" href="pages/ai"><h3 style="margin-bottom: 0; color: #2f2fdb">>>>>- Illustrator Logo Çalışmalarım</h3></a><br><br><br>
+      
+      <h3>>>>>- Web Tasarımı Çalışmalarım</h3>
+      <ul>
+          <li><a target="_blank" href="pages/iQ">Applike Quiz (Non-mobile)</a></li>
+          <li><a target="_blank" href="pages/12">Cofee Shop Template (Non-mobile)</a></li>
+          <li><a target="_blank" href="pages/14">Normal Template </a></li>
+          <li><a target="_blank" href="pages/21">Gallery Template (Responsive)</a></li>
+          <li><a target="_blank" href="pages/silve">Ekin's Collection v1 (Only-mobile)</a></li>
+          <li><a target="_blank" href="pages/17">Ekin's Collection v2 (Only-mobile)</a></li>
+          <li><a target="_blank" href="pages/huzur">İç Huzur</a></li>
+          <li><a target="_blank" href="pages/silv">Ekin's Collection v3 (Only-mobile)</a></li>
+          <li><a target="_blank" href="pages/ekinistan">Ekinistan (Eski site) (İçinde projeler mevcut.)</a></li>
+          <li><a target="_blank" href="pages/silver">Ekin's Collection v4 (Non-mobile)</a></li>
+          <li><a target="_blank" href="pages/silverv2">Ekin's Collection v4.1 (Sorting system)</a></li>
+          <li><a target="_blank" href="pages/silverv5">Ekin's Collection v4.2 (Responsive and pop-ups)</a></li>
+          <li><a target="_blank" href="pages/silverv6">Ekin's Collection v4.3 (Slider)</a></li>
+          <li><a target="_blank" href="http://shop.ekinaslan.com">Ekin's Collection v5 (Final)</a></li>
+      </ul><br>
+      
+      <h3>>>>>- Arduino Çalışmalarım</h3>
+      
+      <!-- forgot to add certifics, this is little patch from cpanel -->
+      <center style="margin-bottom:10px">
+          <img class="media" src="https://digicertify.net/cert/K4BD8O65" alt="">
+          <img class="media" src="https://digicertify.net/cert/X2L9Bz85" alt="">
+      </center>
+      <div class="flex">
+          
+          <div>
+              <p>Proje<a target="_blank" href="pages/order66">Ordering System</a></p>
+              <video controls>
+              <source src="resources/arduino/Proje.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          
+          <div>
+              <p>10 (Potansiyometreler ile Ölçeklendirme)</p>
+              <video controls>
+              <source src="resources/arduino/10.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          <div>
+              <p>9 (Potansiyometreler ile Oyun Kolu)</p>
+              <video controls>
+              <source src="resources/arduino/9.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          <div>
+              <p>8 (Buzzer)</p>
+              <video controls>
+              <source src="resources/arduino/8.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          <div>
+              <p>7 (Kablosuz Küçük Mekanik Kol)</p>
+              <video controls>
+              <source src="resources/arduino/7.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          <div>
+              <p>6 (Kablosuz Servo Motor)</p>
+              <video controls>
+              <source src="resources/arduino/6.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          <div>
+              <p>5 (Blynk ile Led Lambalar)</p>
+              <video controls>
+              <source src="resources/arduino/5.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          <div>
+              <p>4 (Servo Motor)</p>
+              <video controls>
+              <source src="resources/arduino/4.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          <div>
+              <p>3 (Potansiyometre)</p>
+              <video controls>
+              <source src="resources/arduino/3.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          <div>
+              <p>2 (RGB Lambalar)</p>
+              <video controls>
+              <source src="resources/arduino/2.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          <div>
+              <p>1 (Led Lambalar)</p>
+              <video controls>
+              <source src="resources/arduino/1.mp4" type="video/mp4">
+              Bir Hata Oluştu
+              </video>
+          </div>
+          
+          
+          
+      </div>
+    </section>
+    
+    
+    <section>
+       <h2>Kullanabildiğim Diller</h2>
+       <ul>
+           <li>Python</li>
+           <li>Java</li>
+           <li>C#</li>
+           <li>JavaScript (jQuery ve Phaser dahil)</li>
+           <li>C++</li>
+           <li>Ek olarak HTML ve CSS dillerine hakimim.</li>
+       </ul>
+    </section>
+    
+    <section>
+        <h2>Ek Bağlantılar</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/ekin-aslan-044a85211" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Xaszanyn" target="_blank">GitHub</a></li>
+            <li><a href="https://onlinesequencer.net/members/29321" target="_blank">Online Sequencer</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Hakkımda</h2>
+        <p style="text-align: justify">(17 Mayıs 2021) İnternete asıl erişimim ve çalışmalarım geçen yaz başladı. Bu süre boyunca web tasarımlarımı, müzik çalışmalarımı ve yazdığım kodlarımı ve ek olarak yaptığım çalışmaları burada tutuyorum. GitHub ve LinkedIn'i son 1 ayda keşfettim ve yeni çalışmalarımı GitHub üzerinden paylaşmaya başladım. Illustrator ve Photoshop'u belirli bir miktar kullanabiliyorum. Python, Java, C#, JavaScript dillerini biliyorum. Arduino programlama kursları alarak birkaç elektronik çalışma ile C++ diline aşinayım. Son zamanlarda ise oyun tasarımı ve kodlaması hakkında internet üzerinden bilgi edindim, ve son 1 haftadır Unity öğreniyorum. Bu süre zarfında Hypercasual tarzı zıplayan kuş oyunu geliştirdim ve aklımda basit bir platform oyunu yapmak var. 8-bit ve normal oyun müziklerini iyi bir şekilde yapabiliyorum, ek olarak 8-bit sprite çizmek için aldığım ek kurs sayesinde sprite çizimleri yapabiliyorum.</p>
+        <p style="text-align: justify">Bugüne kadar yazılım ve oyun alanında neredeyse tüm bilgileri internet üzerinden öğrendim ve öğreniyorum da. Ücretli veya ücretsiz kaynaklardan konsantre bir şekilde öğrenebilme alışkanlığına sahibim. Üniversitenin dersleri ve sınavları olmadığı zamanlarda günde 7-8 saat öğrenmek istediğim konuları araştırmaktan büyük keyif alıyorum. Sevdiğim konuları araştırıp öğrenmek en başta birkaç gün zorlasa da zevk aldığım için hızlı öğrendiğimi düşünüyorum. Unity kursundan 1 hafta içerisinde çalışır bir mobil oyun yapmam, 3-4 ay içinde orta seviye front-end tasarımına hakim olmam ve 4 hafta boyunca öğrendiğim bilgiler ile internet üzerinden otomatik sipariş algılayabilen Arduino Leonardo makinesi programlamam buna örnek gösterilebilir.</p>
+        <p style="text-align: justify">Herhangi bir motivasyon tekniğim yok; çünkü motivasyonun sadece moralin yüksek olduğu zamanlarda işe yarayıp, zorlayıcı zamanlarda yani çaresiz hissedilen durumlarda ters teptiğini düşünüyorum. Asıl, eğitimler için kendime program oluşturup disiplinli bir şekilde uymanın, zorluk ne kadar sert olsa da her türlü durumda işe yarayacağının kanaatindeyim. Düzen oluşturmaya gayret ediyorum.</p>
+    </section>
+    
+    
+    
+    
+</body>
+</html>

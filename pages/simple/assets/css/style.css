@@ -131,6 +131,12 @@ main section .content p {
     margin-bottom: 10rem;
 
     text-align: justify;
+    line-height: 125%;
+}
+
+main section .content img, main section .content > video {
+    border-radius: 25rem;
+    border: 5rem solid;
 }
 
 main section .content > img, main section .content > video {
@@ -138,12 +144,9 @@ main section .content > img, main section .content > video {
     margin: 25rem auto;
     max-width: 50%;
     max-height: 400rem;
-    border-radius: 25rem;
-
-    border: 5rem solid;
 }
 
-main section .content > img {
+main section .content > img, main section .content .couple img {
     border-color: var(--red);
 }
 
@@ -151,18 +154,31 @@ main section .content > video {
     border-color: var(--blue);
 }
 
-main section .content .downloadable {
-    margin-top: 10rem;
+main section .content .time {
+    display: block;
+    text-align: right;
+
+    color: var(--metal);
+    font-style: italic;
 }
 
-main section .content .downloadable img {
+main section .content .source {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main section .content .source img {
     width: 48rem;
     height: auto;
     margin-right: 25rem;
+
     border-radius: 12rem;
+    border: none;
 }
 
-main section .content .downloadable a {
+main section .content .source a {
     border: 5px solid var(--night);
     border-radius: 25rem;
     padding: 0 10rem;
@@ -174,27 +190,30 @@ main section .content .downloadable a {
     transition: border-color var(--action-fast), background-color var(--action-fast), color var(--action-fast);
 }
 
-main section .content .downloadable a:not(:first-of-type) {
+main section .content .source a:not(:first-of-type) {
     margin-left: 25rem;
 }
 
-main section .content .downloadable a:hover {
+main section .content .source a:hover {
     border-color: var(--green);
     background-color: var(--green);
     color: var(--white);
 }
 
-main section .content .time {
-    display: block;
-    text-align: right;
-
-    color: var(--metal);
-    font-style: italic;
+main section .content .couple {
+    display: flex;
+    margin-bottom: 25rem;
 }
 
-main section .content .slider {
-    margin: 25rem 0;
-    height: 300rem;
-    background-color: cadetblue;
+main section .content .couple img {
+    width: 250rem;
+    height: 150rem;
+    margin-right: 25rem;
+
+    object-fit: cover;
+    object-position: center;
 }
 
+main section .content .couple p {
+    width: calc(100% - 275rem);
+}
